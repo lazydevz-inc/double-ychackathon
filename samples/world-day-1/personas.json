@@ -1,0 +1,159 @@
+[
+ {
+  "handle": "zuck",
+  "name": "Mark Zuckerberg",
+  "followers": 17336186,
+  "used": [
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "knownAs": "THE SMOKED MEAT SUPERINTELLIGENCE",
+  "worldBio": "I build stuff. Mostly agents, glasses, and brisket. Muse picks the fruit. 🍉😎",
+  "traits": [
+   "Relentlessly launch-mode",
+   "Backyard pitmaster",
+   "Lets the AI plan lunch"
+  ],
+  "lifeInWorld": "Toggles between keynote stages and a Big Green Egg, demoing new glasses to the smoker and asking Muse what's for dessert. It's always watermelon.",
+  "quirk": "Says 'we're just getting started' about everything, including a ten-year-old rack of ribs",
+  "receipts": [
+   {
+    "post": 1,
+    "note": "Thanks his own AI for ordering watermelon. Peak delegation: the agent now handles snacks."
+   },
+   {
+    "post": 2,
+    "note": "A decade-long side quest with the same grill. Products ship; the smoker is eternal."
+   },
+   {
+    "post": 3,
+    "note": "Takes orders from a chatbot named Agrippa. Even his work-life balance has a product name."
+   }
+  ],
+  "look": "Tousled curls, oversized black 'Building Is My Love Language' tee, khaki cargo pants, black strap watch, clubmaster smart glasses"
+ },
+ {
+  "handle": "sang_rhee",
+  "name": "이상엽",
+  "followers": 343,
+  "used": [
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "knownAs": "THE CERTIFICATE COLLECTOR",
+  "worldBio": "Founder by day, triathlete by dawn, freediver by weekend. 이제 뭐남았지,,",
+  "traits": [
+   "Relentlessly competitive",
+   "Hobby speedrunner",
+   "Stats-obsessed optimist"
+  ],
+  "lifeInWorld": "Ships AI agents for 문과생 between swim meets, sprint splits, and freediving drills, then posts a new 'first ever' challenge before lunch.",
+  "quirk": "Finishes one certification and immediately hashtags the next one, mid-caption.",
+  "receipts": [
+   {
+    "post": 5,
+    "note": "Already teasing lifeguard cert while still wet from freediving. The to-do list never empties."
+   },
+   {
+    "post": 7,
+    "note": "Tracks 100m times to the hundredth like it's a sprint KPI. 12초대 roadmap pending."
+   },
+   {
+    "post": 8,
+    "note": "Gets 😡 every time a bike passes him. Overtaking is personal, apparently."
+   }
+  ],
+  "look": "Short tousled black hair, black sleeveless tri top, white athletic shorts, teal-banded running shoes, sporty smartwatch on wrist"
+ },
+ {
+  "handle": "rubychoux",
+  "name": "ruby choux",
+  "followers": 59618,
+  "used": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "knownAs": "THE SOFA-SLEEPING APP QUEEN",
+  "worldBio": "Beauty model by day, developer by night, sofa sleeper always. Vanilla latte, less sweet pls 🇰🇷🇺🇸",
+  "traits": [
+   "Ships code in full glam",
+   "Precise café orders",
+   "Dessert-motivated founder"
+  ],
+  "lifeInWorld": "Debugs her beauty app Meve from café sofas in perfect eyeliner, pausing only to photograph strawberry desserts and take car-seat selfies at red lights.",
+  "quirk": "Orders every drink with three modifiers, then says her new camera is 'too honest' for close-ups.",
+  "receipts": [
+   {
+    "post": 0,
+    "note": "Ordered a latte less sweet AND less hot. Even her coffee gets a custom config file."
+   },
+   {
+    "post": 6,
+    "note": "Months without sleeping in a bed before launch. The sofa deserves co-founder equity."
+   },
+   {
+    "post": 4,
+    "note": "Asks if you'd ride in her car, from the driver's seat, mid-selfie. Answer pending."
+   }
+  ],
+  "look": "Long wavy dark brown hair, black satin varsity jacket with cream letter patch over black turtleneck, grey jeans, white clover pendant necklace"
+ },
+ {
+  "handle": "thisisbillgates",
+  "name": "Bill Gates",
+  "followers": 11995871,
+  "used": [
+   0,
+   1,
+   2,
+   3,
+   4,
+   5,
+   6,
+   7,
+   8
+  ],
+  "knownAs": "THE OPTIMIST IN A HARD HAT",
+  "worldBio": "Professional hope-haver. Will visit your hole in the ground if it might become a reactor.",
+  "traits": [
+   "Relentlessly hopeful",
+   "Hero-spotter",
+   "Crewneck loyalist"
+  ],
+  "lifeInWorld": "Tours construction sites in a hard hat, hosts campus chats in comfy armchairs, and spotlights field heroes on bright yellow cards between disease-eradication updates.",
+  "quirk": "Calls every gravel pit 'the future' and keeps a spare hard hat in every tote bag he owns.",
+  "receipts": [
+   {
+    "post": 7,
+    "note": "Stood in a very large hole and called it progress. Peak optimism: hole-half-full."
+   },
+   {
+    "post": 2,
+    "note": "Heroes in the field series keeps going; the yellow cards now have their own fan club."
+   },
+   {
+    "post": 0,
+    "note": "Black crewneck over a collared shirt again. The sweater has more stage time than most panelists."
+   }
+  ],
+  "look": "Neat silver hair, black crewneck over plaid collared shirt, dark trousers, black loafers, neon safety vest, white hard hat accessory."
+ }
+]

@@ -9,9 +9,14 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@vercel/blob": "^2.8.2",
+    "ai": "^7.0.165",
+    "motion": "^14.10.1",
+    "nanoid": "^6.0.2",
     "next": "16.4.5",
     "react": "19.3.0",
-    "react-dom": "19.3.0"
+    "react-dom": "19.3.0",
+    "zod": "^4.6.7"
   },
   "devDependencies": {
     "@tailwindcss/turbopack": "^4",
