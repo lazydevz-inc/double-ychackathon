@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { connection } from "next/server";
 import { Logo } from "@/components/ui";
+import { JoinForm } from "./join/JoinForm";
 import { getMe } from "@/lib/session";
 import { loadWorld } from "@/lib/store";
 
@@ -44,14 +45,16 @@ export default async function Landing() {
           <p className="mt-3 max-w-[460px] font-serif text-[clamp(22px,5.6vw,30px)] italic leading-[1.1] text-paper/95">
             What if your social life continued while you were offline?
           </p>
-          <div className="mt-7 flex flex-col gap-2.5 sm:flex-row">
-            <Link href={joined ? "/feed" : "/join"} className="h-[56px] flex-1 rounded-full bg-paper text-center font-display text-[17px] leading-[56px] tracking-[0.08em] text-ink">
-              {joined ? "OPEN MY FEED" : "CREATE YOUR DOUBLE"}
+          {joined ? (
+            <Link href="/feed" className="mt-7 block h-[56px] rounded-full bg-paper text-center font-display text-[17px] leading-[56px] tracking-[0.08em] text-ink">
+              OPEN MY STORIES
             </Link>
-            <Link href="/feed" className="h-[56px] flex-1 rounded-full border border-paper/60 text-center font-display text-[17px] leading-[56px] tracking-[0.08em]">
-              LOOK AROUND
-            </Link>
-          </div>
+          ) : (
+            <div className="max-w-[460px]">
+              <JoinForm />
+            </div>
+          )}
+          <Link href="/feed" className="mt-4 inline-block text-[13px] text-paper/70 underline-offset-4 hover:underline">or look around first →</Link>
         </div>
       </div>
     </div>
