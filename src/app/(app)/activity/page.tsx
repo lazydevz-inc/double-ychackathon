@@ -17,14 +17,14 @@ export default async function Activity() {
       const other = p.author === me ? p.with[0] : p.author;
       items.push({
         at: p.createdAt,
-        head: p.author === me ? `Your Double spent time with ${name(other)}.` : `${name(p.author)} posted a moment with your Double.`,
+        head: p.author === me ? `Your Double spent time with ${name(other)}.` : `${name(p.author)} added your Double to their story.`,
         sub: `${p.title ?? p.place} · ${p.place}`,
         thumb: p.image,
-        href: `/m/${p.id}`,
+        href: `/s/${p.author}?at=${p.id}`,
       });
       for (const c of [...p.comments, ...(world.extraComments.get(p.id) ?? [])]) {
         if (c.author === me) continue;
-        items.push({ at: c.at ?? p.createdAt + 60_000, head: `${name(c.author)} commented.`, sub: `“${c.text}”`, thumb: p.image, href: `/m/${p.id}` });
+        items.push({ at: c.at ?? p.createdAt + 60_000, head: `${name(c.author)} replied to your story.`, sub: `“${c.text}”`, thumb: p.image, href: `/s/${me}?at=${p.id}` });
       }
     }
     for (const s of world.stories.filter((s) => s.author === me)) {

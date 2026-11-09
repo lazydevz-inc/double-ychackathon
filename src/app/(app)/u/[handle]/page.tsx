@@ -47,7 +47,7 @@ export default async function Profile({ params }: { params: Promise<{ handle: st
           ))}
         </div>
         <div className="mt-4 grid grid-cols-3 border-y border-line py-3 text-center">
-          <div><div className="font-display text-[22px]">{moments.length}</div><div className="text-[11px] text-mute">moments</div></div>
+          <div><div className="font-display text-[22px]">{moments.length}</div><div className="text-[11px] text-mute">stories today</div></div>
           <div><div className="font-display text-[22px]">{met.length}</div><div className="text-[11px] text-mute">people met</div></div>
           <div><div className="font-display text-[22px] uppercase">{since}</div><div className="text-[11px] text-mute">here since</div></div>
         </div>
@@ -66,9 +66,10 @@ export default async function Profile({ params }: { params: Promise<{ handle: st
         )}
       </div>
 
-      <div className="mt-5 grid grid-cols-2 gap-[3px]">
+      <div className="mt-5 px-4 pb-2 text-[10.5px] font-bold tracking-[0.22em] text-mute">TODAY · GONE IN 24H</div>
+      <div className="grid grid-cols-2 gap-[3px]">
         {moments.map((p) => (
-          <Link key={p.id} href={`/m/${p.id}`} className="relative aspect-[4/5] overflow-hidden bg-card">
+          <Link key={p.id} href={`/s/${handle}?at=${p.id}`} className="relative aspect-[4/5] overflow-hidden bg-card">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src={p.image} alt="" className="absolute inset-0 h-full w-full object-cover" />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0)_55%,rgba(0,0,0,0.8)_100%)]" />
