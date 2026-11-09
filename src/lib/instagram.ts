@@ -19,6 +19,7 @@ export type InstagramProfile = {
   bio: string;
   followers: number;
   verified: boolean;
+  pfp: string;
   /** up to `max` photos, newest posts first */
   photos: { url: string; caption: string }[];
   /** reel mp4 urls, newest first */
@@ -55,7 +56,7 @@ export async function fetchInstagram(handle: string, max = 9): Promise<Instagram
   if (!/^[a-z0-9._]{1,30}$/.test(username)) throw new Error("That doesn't look like an Instagram handle");
 
   const [info, media] = await Promise.all([
-    call<{ user?: { username: string; full_name?: string; biography?: string; follower_count?: number; is_verified?: boolean; is_private?: boolean } }>(
+    call<{ user?: { username: string; full_name?: string; biography?: string; follower_count?: number; is_verified?: boolean; is_private?: boolean; profile_pic_url?: string; profile_pic_url_hd?: string; hd_profile_pic_url_info?: { url?: string } } }>(
       "get_info_by_username",
       { username },
     ),
@@ -98,6 +99,7 @@ export async function fetchInstagram(handle: string, max = 9): Promise<Instagram
     bio: user.biography ?? "",
     followers: user.follower_count ?? 0,
     verified: !!user.is_verified,
+    pfp: user.hd_profile_pic_url_info?.url ?? user.profile_pic_url_hd ?? user.profile_pic_url ?? "",
     photos,
     // vertical reels fill the 9:16 player without cropping, so they go first
     clips: [...clips.filter((c) => c.vertical), ...clips.filter((c) => !c.vertical)].map((c) => c.url),
